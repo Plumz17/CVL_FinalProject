@@ -1,0 +1,15 @@
+names:
+- Bis
+- Mobil
+- Motor
+- Truk
+nc: 4
+roboflow:
+  license: CC BY 4.0
+  project: cctv-vehicle-detection-comvis
+  url: https://universe.roboflow.com/tams-workspace-l1vdi/cctv-vehicle-detection-comvis/dataset/1
+  version: 1
+  workspace: tams-workspace-l1vdi
+test: ../test/images
+train: ../train/images
+val: ../valid/images
