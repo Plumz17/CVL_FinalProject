@@ -1,2 +1,0 @@
-data/** filter=lfs diff=lfs merge=lfs -text
-Hasil_Training_CCTV/** filter=lfs diff=lfs merge=lfs -text
