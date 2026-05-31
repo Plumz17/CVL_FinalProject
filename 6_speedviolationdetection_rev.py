@@ -1,10 +1,3 @@
-"""
-SISTEM DETEKSI PELANGGARAN KECEPATAN KENDARAAN
-YOLOv8 + ByteTrack + Homography (Bird's Eye View)
-
-Tekan 'q' untuk berhenti, 'p' untuk pause.
-"""
-
 import cv2
 import numpy as np
 import math
@@ -13,24 +6,12 @@ import datetime
 from collections import defaultdict, deque
 from ultralytics import YOLO
 
-
-# ================================================================
-#  ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗
-# ██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝
-# ██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗
-# ██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║
-# ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
-#  ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝
-# ================================================================
+# Config
 
 MODEL_PATH = 'Hasil_Training_CCTV/Model_V13/weights/best.pt'
 VIDEO_PATH = 'data/pagisiang.3gp'
 OUTPUT_DIR = 'violations_new3'
 
-# Urutan: kiri-jauh, kanan-jauh, kanan-dekat, kiri-dekat
-#   1 ──── 2
-#   │      │
-#   4 ──── 3
 STATIC_ROI_PTS = [
     (422,  216),
     (745,  240),
@@ -63,10 +44,7 @@ SAVE_VIOLATION_FRAME = True
 PIXEL_PER_METER_X = BEV_WIDTH  / REAL_WIDTH_METER
 PIXEL_PER_METER_Y = BEV_HEIGHT / REAL_HEIGHT_METER
 
-
-# ================================================================
 # HOMOGRAPHY
-# ================================================================
 
 def build_homography(roi_pts, bev_w, bev_h):
     src = np.float32(roi_pts)
@@ -87,10 +65,7 @@ def point_to_bev(pt, H):
     dst = cv2.perspectiveTransform(src, H)
     return float(dst[0][0][0]), float(dst[0][0][1])
 
-
-# ================================================================
 # SPEED TRACKER
-# ================================================================
 
 class VehicleSpeedTracker:
     def __init__(self, fps, speed_limit_kmh,
@@ -253,9 +228,7 @@ class VehicleSpeedTracker:
             self.is_stable.pop(tid, None)
 
 
-# ================================================================
 # VISUALISASI
-# ================================================================
 
 PALETTE = {
     "safe"      : (50,  205,  50),
@@ -357,9 +330,7 @@ def build_bev_canvas(tracks_bev, speed_tracker, bev_w, bev_h):
     return canvas
 
 
-# ================================================================
 # MAIN
-# ================================================================
 
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
