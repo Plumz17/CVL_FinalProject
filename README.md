@@ -45,7 +45,8 @@ Dataset information:
 - Vehicle classes: motorcycle, car, bus, and truck
 - Annotation platform: Roboflow
 - Annotation format: YOLOv8
-- Image size: 640 × 640 pixels
+- Original frame size: 1280 × 960 pixels
+- Training image size: 640 × 640 pixels
 
 Dataset access:
 
