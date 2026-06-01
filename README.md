@@ -55,7 +55,8 @@ Dataset access:
 
 ## Output
 
-The system displays detected vehicles with bounding boxes, tracking IDs, estimated speeds, violation status, and Bird's Eye View visualization. When a vehicle exceeds the speed limit, the system marks it as a violation and saves the evidence image.
+The system displays detected vehicles with bounding boxes, tracking IDs, estimated speeds, violation status, and Bird's Eye View visualization. When a vehicle exceeds the speed limit, the system marks it as a violation and saves the evidence image. The system also capture the video recording into a .mp4 file.
+[Google Drive Demo Video](https://drive.google.com/drive/folders/19Uu5CYzMat72s_ja8aCx2Wy2-3ZsVhmp?usp=sharing)
 
 ## Course Information
 
