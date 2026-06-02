@@ -1,6 +1,6 @@
 # CVL_FinalProject
 
-Final project repository for UGM's Computer Vision and Image Analysis course.
+Final project repository for UGM's Computer Vision and Image Analysis course. (Demo and Presentation Video can be accessed from the links in the bottom of this README.md file)
 
 ## Project Title
 
@@ -57,11 +57,8 @@ Dataset access:
 
 The system displays detected vehicles with bounding boxes, tracking IDs, estimated speeds, violation status, and Bird's Eye View visualization. When a vehicle exceeds the speed limit, the system marks it as a violation and saves the evidence image. The system also capture the video recording into a .mp4 file.
 
-Demo video:
-[Google Drive Demo Video](https://drive.google.com/drive/folders/19Uu5CYzMat72s_ja8aCx2Wy2-3ZsVhmp?usp=sharing)
-
-Project explanation video:
-[Google Drive Explanation Video](https://drive.google.com/drive/u/0/folders/1APEnaS9mSJmYU65UFOvfu26r8jQKmQqf)
+Project presentation and demo video:
+[Google Drive Presentation and Demo Video](https://drive.google.com/drive/u/0/folders/1APEnaS9mSJmYU65UFOvfu26r8jQKmQqf)
 
 ## Course Information
 
