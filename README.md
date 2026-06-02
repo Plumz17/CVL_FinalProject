@@ -60,6 +60,9 @@ The system displays detected vehicles with bounding boxes, tracking IDs, estimat
 Demo video:
 [Google Drive Demo Video](https://drive.google.com/drive/folders/19Uu5CYzMat72s_ja8aCx2Wy2-3ZsVhmp?usp=sharing)
 
+Project explanation video:
+[Google Drive Explanation Video](https://drive.google.com/drive/u/0/folders/1APEnaS9mSJmYU65UFOvfu26r8jQKmQqf)
+
 ## Course Information
 
 Final Project for Computer Vision and Image Analysis  
